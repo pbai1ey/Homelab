@@ -22,5 +22,6 @@ class CPU:
         )
 
 
-cpu = CPU("AMD", "Ryzen AI 7 350", 8, 16, 2.0, 5.1)
-cpu.display()
+if __name__ == "__main__":
+    cpu = CPU("AMD", "Ryzen AI 7 350", 8, 16, 2.0, 5.1)
+    cpu.display()

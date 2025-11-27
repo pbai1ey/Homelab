@@ -54,13 +54,14 @@ class IntegratedGPU(GPU):
         )
 
 
-# Examples with accurate specs
-nvidia_gpu = DiscreteGPU(
-    "NVIDIA GeForce RTX 5070", 8, 2347, 4608, 50, 144
-)  # Boost clock, shaders, TGP, RT cores
-nvidia_gpu.display()
+if __name__ == "__main__":
+    # Examples with accurate specs
+    nvidia_gpu = DiscreteGPU(
+        "NVIDIA GeForce RTX 5070", 8, 2347, 4608, 50, 144
+    )  # Boost clock, shaders, TGP, RT cores
+    nvidia_gpu.display()
 
-amd_gpu = IntegratedGPU(
-    "AMD Radeon 860M", 0.5, 3000, 512, 16, 8
-)  # Dedicated VRAM, max clock, shaders, shared max, CUs
-amd_gpu.display()
+    amd_gpu = IntegratedGPU(
+        "AMD Radeon 860M", 0.5, 3000, 512, 16, 8
+    )  # Dedicated VRAM, max clock, shaders, shared max, CUs
+    amd_gpu.display()

@@ -22,5 +22,6 @@ class Storage:
         )
 
 
-storage = Storage("Kingston OM8PGP41024Q-A0", 1, 4700, 3400, 0.002, 5)
-storage.display()
+if __name__ == "__main__":
+    storage = Storage("Kingston OM8PGP41024Q-A0", 1, 4700, 3400, 0.002, 5)
+    storage.display()

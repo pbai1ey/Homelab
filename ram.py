@@ -16,5 +16,7 @@ class RAM:
         )
 
 
-ram = RAM("Micron Technology", "SODIMM", 32, "DDR5", 5600, 8)
-ram.display()
+if __name__ == "__main__":
+
+    ram = RAM("Micron Technology", "SODIMM", 32, "DDR5", 5600, 8)
+    ram.display()
